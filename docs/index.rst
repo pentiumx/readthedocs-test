@@ -1,10 +1,10 @@
-.. Read the Docs Test documentation master file, created by
-   sphinx-quickstart on Fri May 12 11:53:31 2017.
+.. RTDTest documentation master file, created by
+   sphinx-quickstart on Fri May 12 13:21:36 2017.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Read the Docs Test's documentation!
-==============================================
+Welcome to RTDTest's documentation!
+===================================
 
 .. toctree::
    :maxdepth: 2
