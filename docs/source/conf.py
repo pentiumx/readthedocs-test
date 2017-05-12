@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
-# rtd_test documentation build configuration file, created by
-# sphinx-quickstart on Fri May 12 14:07:54 2017.
+# RTD Test documentation build configuration file, created by
+# sphinx-quickstart on Fri May 12 14:21:13 2017.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -18,7 +18,8 @@
 #
 import os
 import sys
-sys.path.insert(0, u'/Users/pentiumx/projects/weblab/readthedocs-test/rtd_test')
+#sys.path.insert(0, os.path.abspath('../../rtd_test'))
+sys.path.insert(0, os.path.abspath('../..'))
 
 
 # -- General configuration ------------------------------------------------
@@ -31,8 +32,12 @@ sys.path.insert(0, u'/Users/pentiumx/projects/weblab/readthedocs-test/rtd_test')
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = ['sphinx.ext.autodoc',
+    'sphinx.ext.doctest',
+    'sphinx.ext.intersphinx',
     'sphinx.ext.todo',
-    'sphinx.ext.viewcode']
+    'sphinx.ext.coverage',
+    'sphinx.ext.viewcode',
+    'sphinx.ext.githubpages']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -47,9 +52,9 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'rtd_test'
-copyright = u'2017, Author'
-author = u'Author'
+project = u'RTD Test'
+copyright = u'2017, Me'
+author = u'Me'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -65,12 +70,12 @@ release = u''
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = 'en'
+language = None
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This patterns also effect to html_static_path and html_extra_path
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = []
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
@@ -101,7 +106,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'rtd_testdoc'
+htmlhelp_basename = 'RTDTestdoc'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -128,8 +133,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'rtd_test.tex', u'rtd\\_test Documentation',
-     u'Author', 'manual'),
+    (master_doc, 'RTDTest.tex', u'RTD Test Documentation',
+     u'Me', 'manual'),
 ]
 
 
@@ -138,7 +143,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'rtd_test', u'rtd_test Documentation',
+    (master_doc, 'rtdtest', u'RTD Test Documentation',
      [author], 1)
 ]
 
@@ -149,31 +154,13 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'rtd_test', u'rtd_test Documentation',
-     author, 'rtd_test', 'One line description of project.',
+    (master_doc, 'RTDTest', u'RTD Test Documentation',
+     author, 'RTDTest', 'One line description of project.',
      'Miscellaneous'),
 ]
 
 
 
-# -- Options for Epub output ----------------------------------------------
 
-# Bibliographic Dublin Core info.
-epub_title = project
-epub_author = author
-epub_publisher = author
-epub_copyright = copyright
-
-# The unique identifier of the text. This can be a ISBN number
-# or the project homepage.
-#
-# epub_identifier = ''
-
-# A unique identification for the text.
-#
-# epub_uid = ''
-
-# A list of files that should not be packed into the epub file.
-epub_exclude_files = ['search.html']
-
-
+# Example configuration for intersphinx: refer to the Python standard library.
+intersphinx_mapping = {'https://docs.python.org/': None}
