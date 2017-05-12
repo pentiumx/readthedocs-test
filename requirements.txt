@@ -1,0 +1,7 @@
+lasagne
+gzip
+cPickle
+glob
+scipy
+PIL
+copy
