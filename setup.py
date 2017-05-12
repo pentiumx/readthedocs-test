@@ -31,6 +31,7 @@ setup(
         'git+https://github.com/Lasagne/Lasagne.git#egg=lasagne-0.2.dev1',
     ],
     install_requires=[
+        'numpy',
         'Lasagne==0.2.dev1',
         'matplotlib',
         'progressbar2',
