@@ -1,5 +1,4 @@
 lasagne
 gzip-reader
-glob
 scipy
 PIL

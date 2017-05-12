@@ -22,6 +22,13 @@ import sys
 sys.path.insert(0, os.path.abspath('../..'))
 
 
+import mock
+
+MOCK_MODULES = ['glob', 'cPickle', 'pickle']
+for mod_name in MOCK_MODULES:
+sys.modules[mod_name] = mock.Mock()
+
+
 # -- General configuration ------------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.
