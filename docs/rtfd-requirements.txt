@@ -1,6 +1,6 @@
 numpy
 Theano
-Lasagne==0.2.dev1
+Lasagne
 matplotlib
 progressbar2
 gzip-reader
