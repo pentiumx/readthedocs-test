@@ -1,3 +1,4 @@
 lasagne
 gzip-reader
 scipy
+Pillow
