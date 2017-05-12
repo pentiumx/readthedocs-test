@@ -24,7 +24,7 @@ sys.path.insert(0, os.path.abspath('../..'))
 
 import mock
 
-MOCK_MODULES = ['glob', 'cPickle', 'pickle']
+MOCK_MODULES = ['glob', 'cPickle', 'pickle', 'PIL']
 for mod_name in MOCK_MODULES:
 sys.modules[mod_name] = mock.Mock()
 
