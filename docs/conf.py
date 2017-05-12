@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
-# RTDTest documentation build configuration file, created by
-# sphinx-quickstart on Fri May 12 13:21:36 2017.
+# rtd_test documentation build configuration file, created by
+# sphinx-quickstart on Fri May 12 14:07:54 2017.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -16,9 +16,9 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
+import os
+import sys
+sys.path.insert(0, u'/Users/pentiumx/projects/weblab/readthedocs-test/rtd_test')
 
 
 # -- General configuration ------------------------------------------------
@@ -31,11 +31,8 @@
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = ['sphinx.ext.autodoc',
-    'sphinx.ext.doctest',
     'sphinx.ext.todo',
-    'sphinx.ext.coverage',
-    'sphinx.ext.viewcode',
-    'sphinx.ext.githubpages']
+    'sphinx.ext.viewcode']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -50,9 +47,9 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'RTDTest'
-copyright = u'2017, Me'
-author = u'Me'
+project = u'rtd_test'
+copyright = u'2017, Author'
+author = u'Author'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -68,7 +65,7 @@ release = u''
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = None
+language = 'en'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -104,7 +101,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'RTDTestdoc'
+htmlhelp_basename = 'rtd_testdoc'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -131,8 +128,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'RTDTest.tex', u'RTDTest Documentation',
-     u'Me', 'manual'),
+    (master_doc, 'rtd_test.tex', u'rtd\\_test Documentation',
+     u'Author', 'manual'),
 ]
 
 
@@ -141,7 +138,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'rtdtest', u'RTDTest Documentation',
+    (master_doc, 'rtd_test', u'rtd_test Documentation',
      [author], 1)
 ]
 
@@ -152,10 +149,31 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'RTDTest', u'RTDTest Documentation',
-     author, 'RTDTest', 'One line description of project.',
+    (master_doc, 'rtd_test', u'rtd_test Documentation',
+     author, 'rtd_test', 'One line description of project.',
      'Miscellaneous'),
 ]
 
+
+
+# -- Options for Epub output ----------------------------------------------
+
+# Bibliographic Dublin Core info.
+epub_title = project
+epub_author = author
+epub_publisher = author
+epub_copyright = copyright
+
+# The unique identifier of the text. This can be a ISBN number
+# or the project homepage.
+#
+# epub_identifier = ''
+
+# A unique identification for the text.
+#
+# epub_uid = ''
+
+# A list of files that should not be packed into the epub file.
+epub_exclude_files = ['search.html']
 
 

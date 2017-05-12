@@ -1,0 +1,881 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>rtd_test.distributions package &#8212; rtd_test  documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="rtd_test package" href="rtd_test.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="rtd-test-distributions-package">
+<h1>rtd_test.distributions package<a class="headerlink" href="#rtd-test-distributions-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-rtd_test.distributions.distribution_models">
+<span id="rtd-test-distributions-distribution-models-module"></span><h2>rtd_test.distributions.distribution_models module<a class="headerlink" href="#module-rtd_test.distributions.distribution_models" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="rtd_test.distributions.distribution_models.Bernoulli">
+<em class="property">class </em><code class="descclassname">rtd_test.distributions.distribution_models.</code><code class="descname">Bernoulli</code><span class="sig-paren">(</span><em>mean_network</em>, <em>given</em>, <em>temp=0.1</em>, <em>seed=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#Bernoulli"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_models.Bernoulli" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rtd_test.distributions.distribution_models.Distribution" title="rtd_test.distributions.distribution_models.Distribution"><code class="xref py py-class docutils literal"><span class="pre">rtd_test.distributions.distribution_models.Distribution</span></code></a></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="rtd_test.distributions.distribution_models.Beta">
+<em class="property">class </em><code class="descclassname">rtd_test.distributions.distribution_models.</code><code class="descname">Beta</code><span class="sig-paren">(</span><em>alpha_network</em>, <em>beta_network</em>, <em>given</em>, <em>iter_sampling=6</em>, <em>rejection_sampling=True</em>, <em>seed=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#Beta"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_models.Beta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rtd_test.distributions.distribution_models.DistributionDouble" title="rtd_test.distributions.distribution_models.DistributionDouble"><code class="xref py py-class docutils literal"><span class="pre">rtd_test.distributions.distribution_models.DistributionDouble</span></code></a></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="rtd_test.distributions.distribution_models.Categorical">
+<em class="property">class </em><code class="descclassname">rtd_test.distributions.distribution_models.</code><code class="descname">Categorical</code><span class="sig-paren">(</span><em>mean_network</em>, <em>given</em>, <em>temp=0.1</em>, <em>n_dim=1</em>, <em>seed=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#Categorical"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_models.Categorical" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rtd_test.distributions.distribution_models.Distribution" title="rtd_test.distributions.distribution_models.Distribution"><code class="xref py py-class docutils literal"><span class="pre">rtd_test.distributions.distribution_models.Distribution</span></code></a></p>
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_models.Categorical.fprop">
+<code class="descname">fprop</code><span class="sig-paren">(</span><em>x</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#Categorical.fprop"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_models.Categorical.fprop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_models.Categorical.sample_given_x">
+<code class="descname">sample_given_x</code><span class="sig-paren">(</span><em>x</em>, <em>repeat=1</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#Categorical.sample_given_x"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_models.Categorical.sample_given_x" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="rtd_test.distributions.distribution_models.Deterministic">
+<em class="property">class </em><code class="descclassname">rtd_test.distributions.distribution_models.</code><code class="descname">Deterministic</code><span class="sig-paren">(</span><em>network</em>, <em>given</em>, <em>seed=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#Deterministic"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_models.Deterministic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rtd_test.distributions.distribution_models.Distribution" title="rtd_test.distributions.distribution_models.Distribution"><code class="xref py py-class docutils literal"><span class="pre">rtd_test.distributions.distribution_models.Distribution</span></code></a></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="rtd_test.distributions.distribution_models.Dirichlet">
+<em class="property">class </em><code class="descclassname">rtd_test.distributions.distribution_models.</code><code class="descname">Dirichlet</code><span class="sig-paren">(</span><em>alpha_network</em>, <em>given</em>, <em>k</em>, <em>iter_sampling=6</em>, <em>rejection_sampling=True</em>, <em>seed=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#Dirichlet"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_models.Dirichlet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rtd_test.distributions.distribution_models.Distribution" title="rtd_test.distributions.distribution_models.Distribution"><code class="xref py py-class docutils literal"><span class="pre">rtd_test.distributions.distribution_models.Distribution</span></code></a></p>
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_models.Dirichlet.sample_given_x">
+<code class="descname">sample_given_x</code><span class="sig-paren">(</span><em>x</em>, <em>repeat=1</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#Dirichlet.sample_given_x"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_models.Dirichlet.sample_given_x" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="rtd_test.distributions.distribution_models.Distribution">
+<em class="property">class </em><code class="descclassname">rtd_test.distributions.distribution_models.</code><code class="descname">Distribution</code><span class="sig-paren">(</span><em>distribution</em>, <em>mean_network</em>, <em>given</em>, <em>seed=1</em>, <em>set_log_likelihood=True</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#Distribution"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_models.Distribution" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="docutils">
+<dt>mean_network <span class="classifier-delimiter">:</span> <span class="classifier">lasagne.layers.Layer</span></dt>
+<dd>The network whose outputs express the paramater of this distribution.</dd>
+<dt>given <span class="classifier-delimiter">:</span> <span class="classifier">list</span></dt>
+<dd><p class="first">This contains instances of lasagne.layers.InputLayer, which mean the
+conditioning variables.
+e.g. if given = [x,y], then the corresponding log-likehood is</p>
+<blockquote class="last">
+<div>log p(<a href="#id1"><span class="problematic" id="id2">*</span></a><a href="#id3"><span class="problematic" id="id4">|</span></a>x,y)</div></blockquote>
+</dd>
+</dl>
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_models.Distribution.fprop">
+<code class="descname">fprop</code><span class="sig-paren">(</span><em>x</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#Distribution.fprop"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_models.Distribution.fprop" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>x <span class="classifier-delimiter">:</span> <span class="classifier">list</span></dt>
+<dd>This contains Theano variables, which must to correspond
+to &#8216;given&#8217;.</dd>
+</dl>
+<dl class="docutils">
+<dt>mean <span class="classifier-delimiter">:</span> <span class="classifier">Theano variable</span></dt>
+<dd>The output of this distribution.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_models.Distribution.get_input_shape">
+<code class="descname">get_input_shape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#Distribution.get_input_shape"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_models.Distribution.get_input_shape" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>tuple</dt>
+<dd>This represents the shape of the inputs of this distribution.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_models.Distribution.get_output_shape">
+<code class="descname">get_output_shape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#Distribution.get_output_shape"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_models.Distribution.get_output_shape" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>tuple</dt>
+<dd>This represents the shape of the output of this distribution.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_models.Distribution.get_params">
+<code class="descname">get_params</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#Distribution.get_params"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_models.Distribution.get_params" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_models.Distribution.log_likelihood_given_x">
+<code class="descname">log_likelihood_given_x</code><span class="sig-paren">(</span><em>samples</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#Distribution.log_likelihood_given_x"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_models.Distribution.log_likelihood_given_x" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>samples <span class="classifier-delimiter">:</span> <span class="classifier">list</span></dt>
+<dd>This contains &#8216;x&#8217;, which has Theano variables, and test sample.</dd>
+</dl>
+<dl class="docutils">
+<dt>Theano variable, shape (n_samples,)</dt>
+<dd>A log-likelihood, p(sample|x).</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_models.Distribution.sample_given_x">
+<code class="descname">sample_given_x</code><span class="sig-paren">(</span><em>x</em>, <em>repeat=1</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#Distribution.sample_given_x"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_models.Distribution.sample_given_x" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>x <span class="classifier-delimiter">:</span> <span class="classifier">list</span></dt>
+<dd>This contains Theano variables, which must to correspond
+to &#8216;given&#8217;.</dd>
+</dl>
+<p>repeat : int or thenao variable</p>
+<dl class="docutils">
+<dt>list</dt>
+<dd>This contains &#8216;x&#8217; and sample ~ p(<a href="#id5"><span class="problematic" id="id6">*</span></a><a href="#id7"><span class="problematic" id="id8">|</span></a>x), such as [x, sample].</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_models.Distribution.sample_mean_given_x">
+<code class="descname">sample_mean_given_x</code><span class="sig-paren">(</span><em>x</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#Distribution.sample_mean_given_x"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_models.Distribution.sample_mean_given_x" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>x <span class="classifier-delimiter">:</span> <span class="classifier">list</span></dt>
+<dd>This contains Theano variables, which must to correspond
+to &#8216;given&#8217;.</dd>
+</dl>
+<dl class="docutils">
+<dt>list</dt>
+<dd>This contains &#8216;x&#8217; and a mean value of sample ~ p(<a href="#id9"><span class="problematic" id="id10">*</span></a><a href="#id11"><span class="problematic" id="id12">|</span></a>x).</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_models.Distribution.set_seed">
+<code class="descname">set_seed</code><span class="sig-paren">(</span><em>seed=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#Distribution.set_seed"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_models.Distribution.set_seed" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="rtd_test.distributions.distribution_models.DistributionDouble">
+<em class="property">class </em><code class="descclassname">rtd_test.distributions.distribution_models.</code><code class="descname">DistributionDouble</code><span class="sig-paren">(</span><em>distribution</em>, <em>mean_network</em>, <em>var_network</em>, <em>given</em>, <em>seed=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#DistributionDouble"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_models.DistributionDouble" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rtd_test.distributions.distribution_models.Distribution" title="rtd_test.distributions.distribution_models.Distribution"><code class="xref py py-class docutils literal"><span class="pre">rtd_test.distributions.distribution_models.Distribution</span></code></a></p>
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_models.DistributionDouble.fprop">
+<code class="descname">fprop</code><span class="sig-paren">(</span><em>x</em>, <em>deterministic=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#DistributionDouble.fprop"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_models.DistributionDouble.fprop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_models.DistributionDouble.get_params">
+<code class="descname">get_params</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#DistributionDouble.get_params"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_models.DistributionDouble.get_params" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="rtd_test.distributions.distribution_models.Gamma">
+<em class="property">class </em><code class="descclassname">rtd_test.distributions.distribution_models.</code><code class="descname">Gamma</code><span class="sig-paren">(</span><em>alpha_network</em>, <em>beta_network</em>, <em>given</em>, <em>seed=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#Gamma"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_models.Gamma" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rtd_test.distributions.distribution_models.DistributionDouble" title="rtd_test.distributions.distribution_models.DistributionDouble"><code class="xref py py-class docutils literal"><span class="pre">rtd_test.distributions.distribution_models.DistributionDouble</span></code></a></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="rtd_test.distributions.distribution_models.Gaussian">
+<em class="property">class </em><code class="descclassname">rtd_test.distributions.distribution_models.</code><code class="descname">Gaussian</code><span class="sig-paren">(</span><em>mean_network</em>, <em>var_network</em>, <em>given</em>, <em>seed=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#Gaussian"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_models.Gaussian" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rtd_test.distributions.distribution_models.DistributionDouble" title="rtd_test.distributions.distribution_models.DistributionDouble"><code class="xref py py-class docutils literal"><span class="pre">rtd_test.distributions.distribution_models.DistributionDouble</span></code></a></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="rtd_test.distributions.distribution_models.GaussianConstantVar">
+<em class="property">class </em><code class="descclassname">rtd_test.distributions.distribution_models.</code><code class="descname">GaussianConstantVar</code><span class="sig-paren">(</span><em>mean_network</em>, <em>given</em>, <em>var=1</em>, <em>seed=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#GaussianConstantVar"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_models.GaussianConstantVar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rtd_test.distributions.distribution_models.Distribution" title="rtd_test.distributions.distribution_models.Distribution"><code class="xref py py-class docutils literal"><span class="pre">rtd_test.distributions.distribution_models.Distribution</span></code></a></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="rtd_test.distributions.distribution_models.Kumaraswamy">
+<em class="property">class </em><code class="descclassname">rtd_test.distributions.distribution_models.</code><code class="descname">Kumaraswamy</code><span class="sig-paren">(</span><em>a_network</em>, <em>b_network</em>, <em>given</em>, <em>stick_breaking=True</em>, <em>seed=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#Kumaraswamy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_models.Kumaraswamy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rtd_test.distributions.distribution_models.DistributionDouble" title="rtd_test.distributions.distribution_models.DistributionDouble"><code class="xref py py-class docutils literal"><span class="pre">rtd_test.distributions.distribution_models.DistributionDouble</span></code></a></p>
+<p>[Naelisnick+ 2016] Deep Generative Models with Stick-Breaking Priors</p>
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_models.Kumaraswamy.log_likelihood_given_x">
+<code class="descname">log_likelihood_given_x</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#Kumaraswamy.log_likelihood_given_x"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_models.Kumaraswamy.log_likelihood_given_x" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_models.Kumaraswamy.sample_given_x">
+<code class="descname">sample_given_x</code><span class="sig-paren">(</span><em>x</em>, <em>repeat=1</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#Kumaraswamy.sample_given_x"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_models.Kumaraswamy.sample_given_x" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="rtd_test.distributions.distribution_models.Laplace">
+<em class="property">class </em><code class="descclassname">rtd_test.distributions.distribution_models.</code><code class="descname">Laplace</code><span class="sig-paren">(</span><em>mean_network</em>, <em>var_network</em>, <em>given</em>, <em>seed=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#Laplace"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_models.Laplace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rtd_test.distributions.distribution_models.DistributionDouble" title="rtd_test.distributions.distribution_models.DistributionDouble"><code class="xref py py-class docutils literal"><span class="pre">rtd_test.distributions.distribution_models.DistributionDouble</span></code></a></p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-rtd_test.distributions.distribution_samples">
+<span id="rtd-test-distributions-distribution-samples-module"></span><h2>rtd_test.distributions.distribution_samples module<a class="headerlink" href="#module-rtd_test.distributions.distribution_samples" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="rtd_test.distributions.distribution_samples.DeterministicSample">
+<em class="property">class </em><code class="descclassname">rtd_test.distributions.distribution_samples.</code><code class="descname">DeterministicSample</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#DeterministicSample"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.DeterministicSample" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">rtd_test.distributions.distribution_samples.DistributionSample</span></code></p>
+<p>Deterministic function
+p(x) = f(x)</p>
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_samples.DeterministicSample.log_likelihood">
+<code class="descname">log_likelihood</code><span class="sig-paren">(</span><em>sample</em>, <em>mean</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#DeterministicSample.log_likelihood"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.DeterministicSample.log_likelihood" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_samples.DeterministicSample.sample">
+<code class="descname">sample</code><span class="sig-paren">(</span><em>mean</em>, <em>*args</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#DeterministicSample.sample"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.DeterministicSample.sample" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>mean <span class="classifier-delimiter">:</span> <span class="classifier">Theano variable, the output of a fully connected layer</span></dt>
+<dd>(any activation function)</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="rtd_test.distributions.distribution_samples.BernoulliSample">
+<em class="property">class </em><code class="descclassname">rtd_test.distributions.distribution_samples.</code><code class="descname">BernoulliSample</code><span class="sig-paren">(</span><em>temp=0.1</em>, <em>seed=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#BernoulliSample"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.BernoulliSample" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rtd_test.distributions.distribution_samples.GumbelSample" title="rtd_test.distributions.distribution_samples.GumbelSample"><code class="xref py py-class docutils literal"><span class="pre">rtd_test.distributions.distribution_samples.GumbelSample</span></code></a></p>
+<p>Bernoulli distribution
+p(x) = mean^x * (1-mean)^(1-x)</p>
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_samples.BernoulliSample.log_likelihood">
+<code class="descname">log_likelihood</code><span class="sig-paren">(</span><em>sample</em>, <em>mean</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#BernoulliSample.log_likelihood"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.BernoulliSample.log_likelihood" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>sample <span class="classifier-delimiter">:</span> <span class="classifier">Theano variable</span></dt>
+<dd>This variable means test samples which you use to estimate
+a test log-likelihood.</dd>
+<dt>mean <span class="classifier-delimiter">:</span> <span class="classifier">Theano variable, the output of a fully connected layer (Sigmoid)</span></dt>
+<dd>This variable is a reconstruction of test samples. This must have
+the same shape as &#8216;sample&#8217;.</dd>
+</dl>
+<dl class="docutils">
+<dt>Theano variable, shape (n_samples,)</dt>
+<dd>A log-likelihood, which is the same meaning as a negative
+binary cross-entropy error.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_samples.BernoulliSample.sample">
+<code class="descname">sample</code><span class="sig-paren">(</span><em>mean</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#BernoulliSample.sample"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.BernoulliSample.sample" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>mean <span class="classifier-delimiter">:</span> <span class="classifier">Theano variable, the output of a fully connected layer (Sigmoid)</span></dt>
+<dd>The paramater (mean value) of this distribution.</dd>
+</dl>
+<dl class="docutils">
+<dt>Theano variable, shape (mean.shape)</dt>
+<dd>This variable is sampled from this distribution.
+i.e. sample ~ p(x|mean)</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="rtd_test.distributions.distribution_samples.CategoricalSample">
+<em class="property">class </em><code class="descclassname">rtd_test.distributions.distribution_samples.</code><code class="descname">CategoricalSample</code><span class="sig-paren">(</span><em>temp=0.1</em>, <em>seed=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#CategoricalSample"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.CategoricalSample" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rtd_test.distributions.distribution_samples.ConcreteSample" title="rtd_test.distributions.distribution_samples.ConcreteSample"><code class="xref py py-class docutils literal"><span class="pre">rtd_test.distributions.distribution_samples.ConcreteSample</span></code></a></p>
+<p>Categorical distribution
+p(x) = prod mean^x</p>
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_samples.CategoricalSample.log_likelihood">
+<code class="descname">log_likelihood</code><span class="sig-paren">(</span><em>samples</em>, <em>mean</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#CategoricalSample.log_likelihood"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.CategoricalSample.log_likelihood" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>sample <span class="classifier-delimiter">:</span> <span class="classifier">Theano variable</span></dt>
+<dd>This variable means test samples which you use to estimate
+a test log-likelihood.</dd>
+<dt>mean <span class="classifier-delimiter">:</span> <span class="classifier">Theano variable, the output of a fully connected layer (Softmax)</span></dt>
+<dd>This variable is a reconstruction of test samples. This must have
+the same shape as &#8216;sample&#8217;.</dd>
+</dl>
+<dl class="docutils">
+<dt>Theano variable, shape (n_samples,)</dt>
+<dd>A log-likelihood, which is the same meaning as a negative
+categorical cross-entropy error.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_samples.CategoricalSample.sample">
+<code class="descname">sample</code><span class="sig-paren">(</span><em>mean</em>, <em>onehot=True</em>, <em>flatten=True</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#CategoricalSample.sample"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.CategoricalSample.sample" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>mean <span class="classifier-delimiter">:</span> <span class="classifier">Theano variable, the output of a fully connected layer (softmax)</span></dt>
+<dd>The paramater (mean value) of this distribution.</dd>
+</dl>
+<dl class="docutils">
+<dt>Theano variable, shape (mean.shape)</dt>
+<dd>This variable is sampled from this distribution.
+i.e. sample ~ p(x|mean)</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="rtd_test.distributions.distribution_samples.GaussianSample">
+<em class="property">class </em><code class="descclassname">rtd_test.distributions.distribution_samples.</code><code class="descname">GaussianSample</code><span class="sig-paren">(</span><em>seed=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#GaussianSample"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.GaussianSample" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">rtd_test.distributions.distribution_samples.DistributionSample</span></code></p>
+<blockquote>
+<div>Gaussian distribution
+p(x) =</div></blockquote>
+<p>rac{1}{sqrt{2*pi*var}} * exp{-
+rac{{x-mean}^2}{2*var}}</p>
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_samples.GaussianSample.log_likelihood">
+<code class="descname">log_likelihood</code><span class="sig-paren">(</span><em>samples</em>, <em>mean</em>, <em>var</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#GaussianSample.log_likelihood"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.GaussianSample.log_likelihood" title="Permalink to this definition">¶</a></dt>
+<dd><p>sample : Theano variable</p>
+<p>mean : Theano variable, the output of a fully connected layer (Linear)</p>
+<p>var : Theano variable, the output of a fully connected layer (Softplus)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_samples.GaussianSample.sample">
+<code class="descname">sample</code><span class="sig-paren">(</span><em>mean</em>, <em>var</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#GaussianSample.sample"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.GaussianSample.sample" title="Permalink to this definition">¶</a></dt>
+<dd><p>mean : Theano variable, the output of a fully connected layer (Linear)</p>
+<p>var : Theano variable, the output of a fully connected layer (Softplus)</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="rtd_test.distributions.distribution_samples.GaussianConstantVarSample">
+<em class="property">class </em><code class="descclassname">rtd_test.distributions.distribution_samples.</code><code class="descname">GaussianConstantVarSample</code><span class="sig-paren">(</span><em>constant_var=1</em>, <em>seed=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#GaussianConstantVarSample"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.GaussianConstantVarSample" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rtd_test.distributions.distribution_samples.GaussianSample" title="rtd_test.distributions.distribution_samples.GaussianSample"><code class="xref py py-class docutils literal"><span class="pre">rtd_test.distributions.distribution_samples.GaussianSample</span></code></a></p>
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_samples.GaussianConstantVarSample.log_likelihood">
+<code class="descname">log_likelihood</code><span class="sig-paren">(</span><em>samples</em>, <em>mean</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#GaussianConstantVarSample.log_likelihood"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.GaussianConstantVarSample.log_likelihood" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_samples.GaussianConstantVarSample.sample">
+<code class="descname">sample</code><span class="sig-paren">(</span><em>mean</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#GaussianConstantVarSample.sample"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.GaussianConstantVarSample.sample" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="rtd_test.distributions.distribution_samples.LaplaceSample">
+<em class="property">class </em><code class="descclassname">rtd_test.distributions.distribution_samples.</code><code class="descname">LaplaceSample</code><span class="sig-paren">(</span><em>seed=1</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#LaplaceSample"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.LaplaceSample" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">rtd_test.distributions.distribution_samples.DistributionSample</span></code></p>
+<blockquote>
+<div>Laplace distribution
+p(x) =</div></blockquote>
+<p>rac{1}{sqrt{2*phi}} * exp{-
+rac{<a href="#id25"><span class="problematic" id="id26">|x-mean|</span></a>}{phi}}</p>
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_samples.LaplaceSample.log_likelihood">
+<code class="descname">log_likelihood</code><span class="sig-paren">(</span><em>samples</em>, <em>mean</em>, <em>b</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#LaplaceSample.log_likelihood"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.LaplaceSample.log_likelihood" title="Permalink to this definition">¶</a></dt>
+<dd><p>sample : Theano variable</p>
+<p>mean : Theano variable, the output of a fully connected layer (Linear)</p>
+<p>b : Theano variable, the output of a fully connected layer (Softplus)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_samples.LaplaceSample.sample">
+<code class="descname">sample</code><span class="sig-paren">(</span><em>mean</em>, <em>b</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#LaplaceSample.sample"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.LaplaceSample.sample" title="Permalink to this definition">¶</a></dt>
+<dd><p>mean : Theano variable, the output of a fully connected layer (Linear)</p>
+<p>b : Theano variable, the output of a fully connected layer (Softplus)</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="rtd_test.distributions.distribution_samples.GumbelSample">
+<em class="property">class </em><code class="descclassname">rtd_test.distributions.distribution_samples.</code><code class="descname">GumbelSample</code><span class="sig-paren">(</span><em>seed=1</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#GumbelSample"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.GumbelSample" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">rtd_test.distributions.distribution_samples.DistributionSample</span></code></p>
+<p>Gumbel distribution</p>
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_samples.GumbelSample.log_likelihood">
+<code class="descname">log_likelihood</code><span class="sig-paren">(</span><em>samples</em>, <em>mu</em>, <em>beta</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#GumbelSample.log_likelihood"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.GumbelSample.log_likelihood" title="Permalink to this definition">¶</a></dt>
+<dd><p>sample : Theano variable</p>
+<p>mu : Theano variable, the output of a fully connected layer (Linear)</p>
+<p>beta : Theano variable, the output of a fully connected layer
+(Softplus)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_samples.GumbelSample.sample">
+<code class="descname">sample</code><span class="sig-paren">(</span><em>mu</em>, <em>beta</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#GumbelSample.sample"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.GumbelSample.sample" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="rtd_test.distributions.distribution_samples.ConcreteSample">
+<em class="property">class </em><code class="descclassname">rtd_test.distributions.distribution_samples.</code><code class="descname">ConcreteSample</code><span class="sig-paren">(</span><em>temp=0.1</em>, <em>seed=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#ConcreteSample"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.ConcreteSample" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rtd_test.distributions.distribution_samples.GumbelSample" title="rtd_test.distributions.distribution_samples.GumbelSample"><code class="xref py py-class docutils literal"><span class="pre">rtd_test.distributions.distribution_samples.GumbelSample</span></code></a></p>
+<dl class="docutils">
+<dt>Concrete distribution (Gumbel-softmax)</dt>
+<dd><a class="reference external" href="https://arxiv.org/abs/1611.01144">https://arxiv.org/abs/1611.01144</a>
+<a class="reference external" href="https://arxiv.org/abs/1611.00712">https://arxiv.org/abs/1611.00712</a></dd>
+</dl>
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_samples.ConcreteSample.log_likelihood">
+<code class="descname">log_likelihood</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#ConcreteSample.log_likelihood"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.ConcreteSample.log_likelihood" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_samples.ConcreteSample.sample">
+<code class="descname">sample</code><span class="sig-paren">(</span><em>mean</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#ConcreteSample.sample"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.ConcreteSample.sample" title="Permalink to this definition">¶</a></dt>
+<dd><p>sample : Theano variable</p>
+<p>mean : Theano variable, the output of a fully connected layer
+(sigmoid or softmax)</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="rtd_test.distributions.distribution_samples.BetaSample">
+<em class="property">class </em><code class="descclassname">rtd_test.distributions.distribution_samples.</code><code class="descname">BetaSample</code><span class="sig-paren">(</span><em>iter_sampling=6</em>, <em>rejection_sampling=True</em>, <em>seed=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#BetaSample"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.BetaSample" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">rtd_test.distributions.distribution_samples.GammaSample</span></code></p>
+<p>Beta distribution
+x^(alpha-1) * (1-x)^(beta-1) / B(alpha, beta)</p>
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_samples.BetaSample.log_likelihood">
+<code class="descname">log_likelihood</code><span class="sig-paren">(</span><em>samples</em>, <em>alpha</em>, <em>beta</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#BetaSample.log_likelihood"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.BetaSample.log_likelihood" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_samples.BetaSample.sample">
+<code class="descname">sample</code><span class="sig-paren">(</span><em>alpha</em>, <em>beta</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#BetaSample.sample"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.BetaSample.sample" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="rtd_test.distributions.distribution_samples.DirichletSample">
+<em class="property">class </em><code class="descclassname">rtd_test.distributions.distribution_samples.</code><code class="descname">DirichletSample</code><span class="sig-paren">(</span><em>k</em>, <em>iter_sampling=6</em>, <em>rejection_sampling=True</em>, <em>seed=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#DirichletSample"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.DirichletSample" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">rtd_test.distributions.distribution_samples.GammaSample</span></code></p>
+<p>Dirichlet distribution
+x^(alpha-1) * (1-x)^(beta-1) / B(alpha, beta)</p>
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_samples.DirichletSample.log_likelihood">
+<code class="descname">log_likelihood</code><span class="sig-paren">(</span><em>samples</em>, <em>alpha</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#DirichletSample.log_likelihood"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.DirichletSample.log_likelihood" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_samples.DirichletSample.sample">
+<code class="descname">sample</code><span class="sig-paren">(</span><em>alpha</em>, <em>flatten=True</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#DirichletSample.sample"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.DirichletSample.sample" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="rtd_test.distributions.distribution_samples.KumaraswamySample">
+<em class="property">class </em><code class="descclassname">rtd_test.distributions.distribution_samples.</code><code class="descname">KumaraswamySample</code><span class="sig-paren">(</span><em>seed=1</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#KumaraswamySample"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.KumaraswamySample" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">rtd_test.distributions.distribution_samples.DistributionSample</span></code></p>
+<p>[Naelisnick+ 2016] Deep Generative Models with Stick-Breaking Priors
+Kumaraswamy distribution
+p(x) = a*b*x^(a-1)(1-x^a)^(b-1)</p>
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_samples.KumaraswamySample.log_likelihood">
+<code class="descname">log_likelihood</code><span class="sig-paren">(</span><em>samples</em>, <em>a</em>, <em>b</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#KumaraswamySample.log_likelihood"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.KumaraswamySample.log_likelihood" title="Permalink to this definition">¶</a></dt>
+<dd><p>sample : Theano variable
+a : Theano variable, the output of a fully connected layer (Softplus)
+b : Theano variable, the output of a fully connected layer (Softplus)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_samples.KumaraswamySample.sample">
+<code class="descname">sample</code><span class="sig-paren">(</span><em>a</em>, <em>b</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#KumaraswamySample.sample"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.KumaraswamySample.sample" title="Permalink to this definition">¶</a></dt>
+<dd><p>a : Theano variable, the output of a fully connected layer (Softplus)
+b : Theano variable, the output of a fully connected layer (Softplus)</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="rtd_test.distributions.distribution_samples.UnitGaussianSample">
+<em class="property">class </em><code class="descclassname">rtd_test.distributions.distribution_samples.</code><code class="descname">UnitGaussianSample</code><span class="sig-paren">(</span><em>seed=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#UnitGaussianSample"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.UnitGaussianSample" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rtd_test.distributions.distribution_samples.GaussianSample" title="rtd_test.distributions.distribution_samples.GaussianSample"><code class="xref py py-class docutils literal"><span class="pre">rtd_test.distributions.distribution_samples.GaussianSample</span></code></a></p>
+<blockquote>
+<div>Standard normal gaussian distribution
+p(x) =</div></blockquote>
+<p>rac{1}{sqrt{2*pi}} * exp{-
+rac{x^2}{2}}</p>
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_samples.UnitGaussianSample.log_likelihood">
+<code class="descname">log_likelihood</code><span class="sig-paren">(</span><em>samples</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#UnitGaussianSample.log_likelihood"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.UnitGaussianSample.log_likelihood" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_samples.UnitGaussianSample.sample">
+<code class="descname">sample</code><span class="sig-paren">(</span><em>shape</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#UnitGaussianSample.sample"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.UnitGaussianSample.sample" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>shape <span class="classifier-delimiter">:</span> <span class="classifier">tuple</span></dt>
+<dd>sets a shape of the output sample</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="rtd_test.distributions.distribution_samples.UnitBernoulliSample">
+<em class="property">class </em><code class="descclassname">rtd_test.distributions.distribution_samples.</code><code class="descname">UnitBernoulliSample</code><span class="sig-paren">(</span><em>temp=0.1</em>, <em>seed=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#UnitBernoulliSample"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.UnitBernoulliSample" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rtd_test.distributions.distribution_samples.BernoulliSample" title="rtd_test.distributions.distribution_samples.BernoulliSample"><code class="xref py py-class docutils literal"><span class="pre">rtd_test.distributions.distribution_samples.BernoulliSample</span></code></a></p>
+<p>Unit bernoulli distribution</p>
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_samples.UnitBernoulliSample.log_likelihood">
+<code class="descname">log_likelihood</code><span class="sig-paren">(</span><em>samples</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#UnitBernoulliSample.log_likelihood"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.UnitBernoulliSample.log_likelihood" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_samples.UnitBernoulliSample.sample">
+<code class="descname">sample</code><span class="sig-paren">(</span><em>shape</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#UnitBernoulliSample.sample"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.UnitBernoulliSample.sample" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="rtd_test.distributions.distribution_samples.UnitCategoricalSample">
+<em class="property">class </em><code class="descclassname">rtd_test.distributions.distribution_samples.</code><code class="descname">UnitCategoricalSample</code><span class="sig-paren">(</span><em>k=1</em>, <em>seed=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#UnitCategoricalSample"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.UnitCategoricalSample" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rtd_test.distributions.distribution_samples.CategoricalSample" title="rtd_test.distributions.distribution_samples.CategoricalSample"><code class="xref py py-class docutils literal"><span class="pre">rtd_test.distributions.distribution_samples.CategoricalSample</span></code></a></p>
+<p>Unit Categorical distribution</p>
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_samples.UnitCategoricalSample.log_likelihood">
+<code class="descname">log_likelihood</code><span class="sig-paren">(</span><em>samples</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#UnitCategoricalSample.log_likelihood"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.UnitCategoricalSample.log_likelihood" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_samples.UnitCategoricalSample.sample">
+<code class="descname">sample</code><span class="sig-paren">(</span><em>shape</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#UnitCategoricalSample.sample"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.UnitCategoricalSample.sample" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="rtd_test.distributions.distribution_samples.UnitBetaSample">
+<em class="property">class </em><code class="descclassname">rtd_test.distributions.distribution_samples.</code><code class="descname">UnitBetaSample</code><span class="sig-paren">(</span><em>alpha=1.0</em>, <em>beta=1.0</em>, <em>iter_sampling=6</em>, <em>rejection_sampling=True</em>, <em>seed=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#UnitBetaSample"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.UnitBetaSample" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rtd_test.distributions.distribution_samples.BetaSample" title="rtd_test.distributions.distribution_samples.BetaSample"><code class="xref py py-class docutils literal"><span class="pre">rtd_test.distributions.distribution_samples.BetaSample</span></code></a></p>
+<p>Unit Beta distribution</p>
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_samples.UnitBetaSample.log_likelihood">
+<code class="descname">log_likelihood</code><span class="sig-paren">(</span><em>samples</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#UnitBetaSample.log_likelihood"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.UnitBetaSample.log_likelihood" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_samples.UnitBetaSample.sample">
+<code class="descname">sample</code><span class="sig-paren">(</span><em>shape</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#UnitBetaSample.sample"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.UnitBetaSample.sample" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="rtd_test.distributions.distribution_samples.UnitDirichletSample">
+<em class="property">class </em><code class="descclassname">rtd_test.distributions.distribution_samples.</code><code class="descname">UnitDirichletSample</code><span class="sig-paren">(</span><em>k</em>, <em>alpha=1.0</em>, <em>iter_sampling=6</em>, <em>rejection_sampling=True</em>, <em>seed=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#UnitDirichletSample"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.UnitDirichletSample" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rtd_test.distributions.distribution_samples.DirichletSample" title="rtd_test.distributions.distribution_samples.DirichletSample"><code class="xref py py-class docutils literal"><span class="pre">rtd_test.distributions.distribution_samples.DirichletSample</span></code></a></p>
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_samples.UnitDirichletSample.log_likelihood">
+<code class="descname">log_likelihood</code><span class="sig-paren">(</span><em>samples</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#UnitDirichletSample.log_likelihood"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.UnitDirichletSample.log_likelihood" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="rtd_test.distributions.distribution_samples.UnitDirichletSample.sample">
+<code class="descname">sample</code><span class="sig-paren">(</span><em>shape</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_samples.html#UnitDirichletSample.sample"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.distribution_samples.UnitDirichletSample.sample" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-rtd_test.distributions">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-rtd_test.distributions" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="rtd_test.distributions.Distribution">
+<em class="property">class </em><code class="descclassname">rtd_test.distributions.</code><code class="descname">Distribution</code><span class="sig-paren">(</span><em>distribution</em>, <em>mean_network</em>, <em>given</em>, <em>seed=1</em>, <em>set_log_likelihood=True</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#Distribution"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.Distribution" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="docutils">
+<dt>mean_network <span class="classifier-delimiter">:</span> <span class="classifier">lasagne.layers.Layer</span></dt>
+<dd>The network whose outputs express the paramater of this distribution.</dd>
+<dt>given <span class="classifier-delimiter">:</span> <span class="classifier">list</span></dt>
+<dd><p class="first">This contains instances of lasagne.layers.InputLayer, which mean the
+conditioning variables.
+e.g. if given = [x,y], then the corresponding log-likehood is</p>
+<blockquote class="last">
+<div>log p(<a href="#id13"><span class="problematic" id="id14">*</span></a><a href="#id15"><span class="problematic" id="id16">|</span></a>x,y)</div></blockquote>
+</dd>
+</dl>
+<dl class="method">
+<dt id="rtd_test.distributions.Distribution.fprop">
+<code class="descname">fprop</code><span class="sig-paren">(</span><em>x</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#Distribution.fprop"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.Distribution.fprop" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>x <span class="classifier-delimiter">:</span> <span class="classifier">list</span></dt>
+<dd>This contains Theano variables, which must to correspond
+to &#8216;given&#8217;.</dd>
+</dl>
+<dl class="docutils">
+<dt>mean <span class="classifier-delimiter">:</span> <span class="classifier">Theano variable</span></dt>
+<dd>The output of this distribution.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rtd_test.distributions.Distribution.get_input_shape">
+<code class="descname">get_input_shape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#Distribution.get_input_shape"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.Distribution.get_input_shape" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>tuple</dt>
+<dd>This represents the shape of the inputs of this distribution.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rtd_test.distributions.Distribution.get_output_shape">
+<code class="descname">get_output_shape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#Distribution.get_output_shape"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.Distribution.get_output_shape" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>tuple</dt>
+<dd>This represents the shape of the output of this distribution.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rtd_test.distributions.Distribution.get_params">
+<code class="descname">get_params</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#Distribution.get_params"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.Distribution.get_params" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="rtd_test.distributions.Distribution.log_likelihood_given_x">
+<code class="descname">log_likelihood_given_x</code><span class="sig-paren">(</span><em>samples</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#Distribution.log_likelihood_given_x"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.Distribution.log_likelihood_given_x" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>samples <span class="classifier-delimiter">:</span> <span class="classifier">list</span></dt>
+<dd>This contains &#8216;x&#8217;, which has Theano variables, and test sample.</dd>
+</dl>
+<dl class="docutils">
+<dt>Theano variable, shape (n_samples,)</dt>
+<dd>A log-likelihood, p(sample|x).</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rtd_test.distributions.Distribution.sample_given_x">
+<code class="descname">sample_given_x</code><span class="sig-paren">(</span><em>x</em>, <em>repeat=1</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#Distribution.sample_given_x"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.Distribution.sample_given_x" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>x <span class="classifier-delimiter">:</span> <span class="classifier">list</span></dt>
+<dd>This contains Theano variables, which must to correspond
+to &#8216;given&#8217;.</dd>
+</dl>
+<p>repeat : int or thenao variable</p>
+<dl class="docutils">
+<dt>list</dt>
+<dd>This contains &#8216;x&#8217; and sample ~ p(<a href="#id17"><span class="problematic" id="id18">*</span></a><a href="#id19"><span class="problematic" id="id20">|</span></a>x), such as [x, sample].</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rtd_test.distributions.Distribution.sample_mean_given_x">
+<code class="descname">sample_mean_given_x</code><span class="sig-paren">(</span><em>x</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#Distribution.sample_mean_given_x"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.Distribution.sample_mean_given_x" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>x <span class="classifier-delimiter">:</span> <span class="classifier">list</span></dt>
+<dd>This contains Theano variables, which must to correspond
+to &#8216;given&#8217;.</dd>
+</dl>
+<dl class="docutils">
+<dt>list</dt>
+<dd>This contains &#8216;x&#8217; and a mean value of sample ~ p(<a href="#id21"><span class="problematic" id="id22">*</span></a><a href="#id23"><span class="problematic" id="id24">|</span></a>x).</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rtd_test.distributions.Distribution.set_seed">
+<code class="descname">set_seed</code><span class="sig-paren">(</span><em>seed=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#Distribution.set_seed"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.Distribution.set_seed" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="rtd_test.distributions.Deterministic">
+<em class="property">class </em><code class="descclassname">rtd_test.distributions.</code><code class="descname">Deterministic</code><span class="sig-paren">(</span><em>network</em>, <em>given</em>, <em>seed=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#Deterministic"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.Deterministic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rtd_test.distributions.distribution_models.Distribution" title="rtd_test.distributions.distribution_models.Distribution"><code class="xref py py-class docutils literal"><span class="pre">rtd_test.distributions.distribution_models.Distribution</span></code></a></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="rtd_test.distributions.Bernoulli">
+<em class="property">class </em><code class="descclassname">rtd_test.distributions.</code><code class="descname">Bernoulli</code><span class="sig-paren">(</span><em>mean_network</em>, <em>given</em>, <em>temp=0.1</em>, <em>seed=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#Bernoulli"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.Bernoulli" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rtd_test.distributions.distribution_models.Distribution" title="rtd_test.distributions.distribution_models.Distribution"><code class="xref py py-class docutils literal"><span class="pre">rtd_test.distributions.distribution_models.Distribution</span></code></a></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="rtd_test.distributions.Categorical">
+<em class="property">class </em><code class="descclassname">rtd_test.distributions.</code><code class="descname">Categorical</code><span class="sig-paren">(</span><em>mean_network</em>, <em>given</em>, <em>temp=0.1</em>, <em>n_dim=1</em>, <em>seed=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#Categorical"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.Categorical" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rtd_test.distributions.distribution_models.Distribution" title="rtd_test.distributions.distribution_models.Distribution"><code class="xref py py-class docutils literal"><span class="pre">rtd_test.distributions.distribution_models.Distribution</span></code></a></p>
+<dl class="method">
+<dt id="rtd_test.distributions.Categorical.fprop">
+<code class="descname">fprop</code><span class="sig-paren">(</span><em>x</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#Categorical.fprop"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.Categorical.fprop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="rtd_test.distributions.Categorical.sample_given_x">
+<code class="descname">sample_given_x</code><span class="sig-paren">(</span><em>x</em>, <em>repeat=1</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#Categorical.sample_given_x"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.Categorical.sample_given_x" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="rtd_test.distributions.Gaussian">
+<em class="property">class </em><code class="descclassname">rtd_test.distributions.</code><code class="descname">Gaussian</code><span class="sig-paren">(</span><em>mean_network</em>, <em>var_network</em>, <em>given</em>, <em>seed=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#Gaussian"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.Gaussian" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rtd_test.distributions.distribution_models.DistributionDouble" title="rtd_test.distributions.distribution_models.DistributionDouble"><code class="xref py py-class docutils literal"><span class="pre">rtd_test.distributions.distribution_models.DistributionDouble</span></code></a></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="rtd_test.distributions.GaussianConstantVar">
+<em class="property">class </em><code class="descclassname">rtd_test.distributions.</code><code class="descname">GaussianConstantVar</code><span class="sig-paren">(</span><em>mean_network</em>, <em>given</em>, <em>var=1</em>, <em>seed=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#GaussianConstantVar"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.GaussianConstantVar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rtd_test.distributions.distribution_models.Distribution" title="rtd_test.distributions.distribution_models.Distribution"><code class="xref py py-class docutils literal"><span class="pre">rtd_test.distributions.distribution_models.Distribution</span></code></a></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="rtd_test.distributions.Laplace">
+<em class="property">class </em><code class="descclassname">rtd_test.distributions.</code><code class="descname">Laplace</code><span class="sig-paren">(</span><em>mean_network</em>, <em>var_network</em>, <em>given</em>, <em>seed=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#Laplace"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.Laplace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rtd_test.distributions.distribution_models.DistributionDouble" title="rtd_test.distributions.distribution_models.DistributionDouble"><code class="xref py py-class docutils literal"><span class="pre">rtd_test.distributions.distribution_models.DistributionDouble</span></code></a></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="rtd_test.distributions.Kumaraswamy">
+<em class="property">class </em><code class="descclassname">rtd_test.distributions.</code><code class="descname">Kumaraswamy</code><span class="sig-paren">(</span><em>a_network</em>, <em>b_network</em>, <em>given</em>, <em>stick_breaking=True</em>, <em>seed=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#Kumaraswamy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.Kumaraswamy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rtd_test.distributions.distribution_models.DistributionDouble" title="rtd_test.distributions.distribution_models.DistributionDouble"><code class="xref py py-class docutils literal"><span class="pre">rtd_test.distributions.distribution_models.DistributionDouble</span></code></a></p>
+<p>[Naelisnick+ 2016] Deep Generative Models with Stick-Breaking Priors</p>
+<dl class="method">
+<dt id="rtd_test.distributions.Kumaraswamy.log_likelihood_given_x">
+<code class="descname">log_likelihood_given_x</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#Kumaraswamy.log_likelihood_given_x"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.Kumaraswamy.log_likelihood_given_x" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="rtd_test.distributions.Kumaraswamy.sample_given_x">
+<code class="descname">sample_given_x</code><span class="sig-paren">(</span><em>x</em>, <em>repeat=1</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#Kumaraswamy.sample_given_x"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.Kumaraswamy.sample_given_x" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="rtd_test.distributions.Gamma">
+<em class="property">class </em><code class="descclassname">rtd_test.distributions.</code><code class="descname">Gamma</code><span class="sig-paren">(</span><em>alpha_network</em>, <em>beta_network</em>, <em>given</em>, <em>seed=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#Gamma"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.Gamma" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rtd_test.distributions.distribution_models.DistributionDouble" title="rtd_test.distributions.distribution_models.DistributionDouble"><code class="xref py py-class docutils literal"><span class="pre">rtd_test.distributions.distribution_models.DistributionDouble</span></code></a></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="rtd_test.distributions.Beta">
+<em class="property">class </em><code class="descclassname">rtd_test.distributions.</code><code class="descname">Beta</code><span class="sig-paren">(</span><em>alpha_network</em>, <em>beta_network</em>, <em>given</em>, <em>iter_sampling=6</em>, <em>rejection_sampling=True</em>, <em>seed=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#Beta"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.Beta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rtd_test.distributions.distribution_models.DistributionDouble" title="rtd_test.distributions.distribution_models.DistributionDouble"><code class="xref py py-class docutils literal"><span class="pre">rtd_test.distributions.distribution_models.DistributionDouble</span></code></a></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="rtd_test.distributions.Dirichlet">
+<em class="property">class </em><code class="descclassname">rtd_test.distributions.</code><code class="descname">Dirichlet</code><span class="sig-paren">(</span><em>alpha_network</em>, <em>given</em>, <em>k</em>, <em>iter_sampling=6</em>, <em>rejection_sampling=True</em>, <em>seed=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#Dirichlet"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.Dirichlet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rtd_test.distributions.distribution_models.Distribution" title="rtd_test.distributions.distribution_models.Distribution"><code class="xref py py-class docutils literal"><span class="pre">rtd_test.distributions.distribution_models.Distribution</span></code></a></p>
+<dl class="method">
+<dt id="rtd_test.distributions.Dirichlet.sample_given_x">
+<code class="descname">sample_given_x</code><span class="sig-paren">(</span><em>x</em>, <em>repeat=1</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rtd_test/distributions/distribution_models.html#Dirichlet.sample_given_x"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rtd_test.distributions.Dirichlet.sample_given_x" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">rtd_test.distributions package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-rtd_test.distributions.distribution_models">rtd_test.distributions.distribution_models module</a></li>
+<li><a class="reference internal" href="#module-rtd_test.distributions.distribution_samples">rtd_test.distributions.distribution_samples module</a></li>
+<li><a class="reference internal" href="#module-rtd_test.distributions">Module contents</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="rtd_test.html">rtd_test package</a><ul>
+      <li>Previous: <a href="rtd_test.html" title="previous chapter">rtd_test package</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/rtd_test.distributions.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017, Author.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+      |
+      <a href="_sources/rtd_test.distributions.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
