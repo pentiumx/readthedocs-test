@@ -1,3 +1,5 @@
+numpy
+theano
 lasagne
 gzip-reader
 scipy
