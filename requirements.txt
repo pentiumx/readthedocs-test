@@ -1,7 +1,6 @@
 lasagne
-gzip
+gzip-reader
 cPickle
 glob
 scipy
 PIL
-copy
