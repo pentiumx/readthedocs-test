@@ -22,11 +22,11 @@ def find_version(*file_paths):
 
 
 setup(
-    name='Tars',
-    version=find_version("Tars", "__init__.py"),
-    description='Deep generative model library',
-    url='https://github.com/masa-su/Tars',
-    author='Masahiro Suzuki',
+    name='RTD Test',
+    version=find_version("rtd_test", "__init__.py"),
+    description='A sample library',
+    #url='https://github.com/masa-su/Tars',
+    author='Me',
     dependency_links=[
         'git+https://github.com/Lasagne/Lasagne.git#egg=lasagne-0.2.dev1',
     ],
