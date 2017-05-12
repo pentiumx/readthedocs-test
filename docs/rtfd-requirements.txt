@@ -1,6 +1,10 @@
 numpy
-theano
-lasagne
+Theano
+Lasagne==0.2.dev1
+matplotlib
+progressbar2
 gzip-reader
 scipy
 Pillow
+scikit-learn
+six
